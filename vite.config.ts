@@ -26,5 +26,8 @@ export default defineConfig({
 	},
 	worker: {
 		format: 'es'
+	},
+	optimizeDeps: {
+		exclude: ['**/node_modules/**', '**/.*/**/node_modules/**', '**/.venv/**','**/static/**','**/backend/**']
 	}
 });
