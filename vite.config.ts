@@ -28,6 +28,11 @@ export default defineConfig({
 		format: 'es'
 	},
 	optimizeDeps: {
-		exclude: ['**/node_modules/**', '**/.*/**/node_modules/**', '**/.venv/**','**/static/**','**/backend/**']
-	}
+		exclude: ['backend/', 'node_modules/*', 'static/pyodide']
+	},
+  server:{
+    watch:{
+      ignored:['**/*.venv']
+    }
+  }
 });

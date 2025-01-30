@@ -296,7 +296,7 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
+# yarn v2 n
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
@@ -307,3 +307,8 @@ dist
 cypress/videos
 cypress/screenshots
 .vscode/settings.json
+
+backend/.venv
+static/pyodide/
+backend/.venv/
+node_modules/
